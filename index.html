@@ -1,0 +1,282 @@
+<!doctype html>
+<html lang="lv">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>Brokāns un dēli · pulksteņu darbnīca · Aspazijas bulvāris 32, Rīga</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:wght@400;500;700&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{
+  color-scheme:light;
+  --bench:#ffffff; --paper:#f6f5f2; --ink:#16181b; --mut:#6b6f76; --rule:#dcdad4; --gold:#a8843f; --gold-2:#86682e;
+  --serif:"DM Serif Display",Georgia,serif; --sans:"DM Sans",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif; --mono:"DM Mono",ui-monospace,Menlo,monospace;
+  --edge:max(28px,calc((100vw - 1104px)/2));
+}
+*{box-sizing:border-box}
+html{background:var(--bench)}
+body{margin:0;background:var(--bench);color:var(--ink);font:17px/1.6 var(--sans);-webkit-font-smoothing:antialiased}
+a{color:inherit} img{display:block;max-width:100%;height:auto}
+.wrap{max-width:1160px;margin:0 auto;padding:0 28px}
+.mono{font:500 .72rem/1.4 var(--mono);letter-spacing:.08em;text-transform:uppercase;color:var(--mut)}
+h2{margin:0 0 .4em;font:400 clamp(2rem,3.8vw,2.9rem)/1.06 var(--serif);letter-spacing:-.01em}
+.notice{background:var(--ink);color:#c9ccd1;font:500 .74rem/1.4 var(--sans);text-align:center;padding:8px 20px}.notice b{color:#fff}
+
+.mast{display:flex;justify-content:space-between;align-items:baseline;gap:20px;padding-top:22px;padding-bottom:16px;border-bottom:1px solid var(--rule)}
+.mast h1{margin:0;font:400 1.7rem/1 var(--serif)}
+.mast .mono{margin:0}
+
+/* hero: the movement, round, on a dark field — the page's circle motif starts here (dial at the end) */
+.hero{background:#0f1113 radial-gradient(120% 90% at 78% 40%,#23272b 0%,#0f1113 62%);color:#f3efe6;overflow:hidden}
+.hero .in{display:grid;grid-template-columns:1.05fr .95fr;gap:48px;align-items:center;min-height:min(84vh,780px);padding-top:56px;padding-bottom:64px}
+.hero .mono{color:var(--gold)}
+.hero h2{margin:.35em 0 .4em;font-size:clamp(2.6rem,5.2vw,4.6rem);line-height:1.02;color:#fff}
+.hero h2 span{color:var(--gold)}
+.hero p{margin:0 0 1.9em;max-width:28em;color:#c9c4b8;font-size:1.06rem}
+.call{display:inline-flex;flex-direction:column;text-decoration:none;background:var(--gold);color:#16181b;padding:16px 26px 14px;line-height:1.1}
+.call small{font:500 .66rem/1.4 var(--mono);letter-spacing:.12em;text-transform:uppercase;opacity:.8} .call span{font:400 1.7rem/1.1 var(--serif)}
+.disc{position:relative;margin:0;justify-self:center;width:min(100%,560px);aspect-ratio:1}
+.disc img{width:100%;height:100%;object-fit:cover;border-radius:50%;box-shadow:0 30px 70px rgba(0,0,0,.6),0 0 0 1px rgba(255,255,255,.08)}
+.disc:after{content:"";position:absolute;inset:-14px;border-radius:50%;border:1px solid rgba(168,132,63,.55);pointer-events:none}
+.disc:before{content:"";position:absolute;inset:-14px;border-radius:50%;background:repeating-conic-gradient(rgba(168,132,63,.9) 0 .7deg,transparent .7deg 6deg);-webkit-mask:radial-gradient(circle closest-side,transparent calc(100% - 10px),#000 calc(100% - 9px));mask:radial-gradient(circle closest-side,transparent calc(100% - 10px),#000 calc(100% - 9px));pointer-events:none}
+.fig{position:absolute;right:var(--edge);bottom:18px;margin:0;color:#8f8a80}
+
+/* the three plates — a service, shown */
+.plates{padding:84px 0 72px}
+.plates .intro{max-width:36em;color:#33363b;margin:0 0 2.4em}
+.row3{display:grid;grid-template-columns:repeat(3,1fr);gap:30px}
+.plate{margin:0}
+.plate img{width:100%;aspect-ratio:4/5;object-fit:cover;border:1px solid var(--rule)}
+.plate .n{display:block;margin:14px 0 2px;font:400 2.4rem/1 var(--serif);color:var(--gold)}
+.plate h3{margin:0 0 .25em;font:400 1.55rem/1.1 var(--serif)}
+.plate p{margin:0;color:var(--mut);font-size:.97rem}
+
+/* what comes in: sorted into a parts tray, each compartment drawn */
+.work{padding:88px 0 80px;background:var(--paper);border-top:1px solid var(--rule)}
+.work .lead{max-width:34em;color:#33363b;margin:0 0 2.2em}
+.tray{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:#d6d1c6;border:1px solid #d6d1c6;box-shadow:inset 0 2px 0 #fff,0 18px 30px rgba(40,35,20,.08)}
+.cell{background:#fbfaf7;padding:26px 22px 24px;min-height:190px;display:flex;flex-direction:column;gap:14px}
+.cell svg{width:46px;height:46px;stroke:var(--gold);fill:none;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round}
+.cell h3{margin:auto 0 0;font:400 1.22rem/1.15 var(--serif)} .cell p{margin:0;font:500 .66rem/1.5 var(--mono);letter-spacing:.08em;text-transform:uppercase;color:var(--mut)}
+.cell.now{background:#fff}
+.traycap{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;margin:14px 0 0}
+.brands{margin:40px 0 0;padding:20px 24px;border:1px solid var(--rule);background:#fff;display:flex;gap:24px;align-items:baseline;flex-wrap:wrap}
+.brands p{margin:0;font:400 1.15rem/1.5 var(--serif)}
+
+/* the customers' words on round watch papers — the printed discs watchmakers once tucked into a case back */
+.voice{padding:90px 0 96px;background:#efe9dc}
+.voice .cols{display:grid;grid-template-columns:5fr 7fr;gap:56px;align-items:center}
+.voice .score{display:flex;align-items:baseline;gap:.9em;flex-wrap:wrap;margin:0 0 1.4em}
+.voice .score b{font:400 2.8rem/1 var(--serif);color:var(--ink)} .voice .score i{font-style:normal;color:var(--gold);letter-spacing:.2em;font-size:1.15rem}
+.voice blockquote{margin:0;font:italic 400 clamp(1.7rem,3vw,2.4rem)/1.22 var(--serif);max-width:20em}
+.voice cite{display:block;margin-top:.9em;font-style:normal}
+.papers{position:relative;display:grid;grid-template-columns:1fr 1fr;gap:26px 22px}
+.paper{position:relative;margin:0;aspect-ratio:1;border-radius:50%;background:#fffdf7;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:14% 15%;box-shadow:0 16px 36px rgba(50,40,15,.16),0 0 0 1px #d9d0bc}
+.paper:before{content:"";position:absolute;inset:7px;border-radius:50%;border:1.5px solid var(--gold);pointer-events:none}
+.paper:after{content:"";position:absolute;inset:12px;border-radius:50%;background:repeating-conic-gradient(var(--gold) 0 .8deg,transparent .8deg 5deg);-webkit-mask:radial-gradient(circle closest-side,transparent calc(100% - 7px),#000 calc(100% - 6px));mask:radial-gradient(circle closest-side,transparent calc(100% - 7px),#000 calc(100% - 6px));opacity:.7;pointer-events:none}
+.paper p{margin:0 0 .8em;font:italic 400 clamp(1rem,1.4vw,1.14rem)/1.4 var(--serif);color:#2b2e33}
+.paper .mono{font-size:.62rem;color:var(--gold-2)}
+.paper:nth-child(1){transform:translateY(22px)} .paper:nth-child(2){transform:translate(-8px,-14px) scale(.92)} .paper:nth-child(3){grid-column:1/3;justify-self:center;width:calc(50% - 11px);transform:translateY(-10px)}
+
+/* the enquiry composer */
+.ask{background:var(--ink);color:#e9eaec;padding:76px 0}
+.ask h2{color:#fff} .ask .intro{color:#b9bcc2;max-width:34em;margin:0 0 2em}
+.ask .grid{display:grid;grid-template-columns:1fr 1fr;gap:44px;align-items:start}
+.ask label{display:block;margin:0 0 .5em}
+.ask .mono{color:#9da1a8}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 1.5em}
+.chips button{border:1px solid #4a4e55;background:transparent;color:#e9eaec;font:500 .88rem/1 var(--sans);padding:.65em .95em;cursor:pointer;border-radius:2px}
+.chips button[aria-pressed=true]{background:var(--gold);border-color:var(--gold);color:#16181b}
+.ask input,.ask textarea{width:100%;background:#1f2226;border:1px solid #3a3e45;color:#fff;font:400 1rem/1.4 var(--sans);padding:.75em .9em;margin:0 0 1.4em;border-radius:2px}
+.ask textarea{min-height:88px;resize:vertical}
+.preview{background:#f6f5f2;color:var(--ink);padding:22px 24px;border-left:3px solid var(--gold)}
+.preview pre{margin:.6em 0 1.2em;white-space:pre-wrap;font:400 .93rem/1.55 var(--mono);color:#23262a}
+.send{display:flex;gap:10px;flex-wrap:wrap}
+.send a{text-decoration:none;font:700 .82rem/1 var(--sans);letter-spacing:.04em;padding:.85em 1.1em;border:1px solid var(--ink)}
+.send a.wa{background:var(--ink);color:#fff}
+.tiny{margin:1em 0 0;font-size:.78rem;color:var(--mut)}
+
+/* visit: a live dial — the gold arc is today's opening hours, the hands are Rīga time */
+.visit{padding:84px 0 40px}
+.visit .cols{display:grid;grid-template-columns:auto 1fr 1.15fr;gap:52px;align-items:center;margin-top:1.6em}
+.dial{width:230px;text-align:center} .dial svg{display:block;width:100%;height:auto}
+.dial .now{margin:.9em 0 0;font:500 .78rem/1.4 var(--mono);letter-spacing:.06em;text-transform:uppercase;color:var(--gold-2)} .dial .now.shut{color:var(--mut)}
+.hours{list-style:none;margin:.6em 0 1.4em;padding:0}
+.hours li{display:flex;justify-content:space-between;gap:12px;padding:.6em 0;border-top:1px solid var(--rule);font-size:.97rem}
+.hours li:last-child{border-bottom:1px solid var(--rule)} .hours li span:last-child{font-family:var(--mono);font-size:.88rem;color:var(--mut)}
+.hours li.today{font-weight:700} .hours li.today span:last-child{color:var(--gold-2)}
+.addr .big{margin:.3em 0 .1em;font:400 1.7rem/1.15 var(--serif)} .addr p{margin:0 0 .3em;color:var(--mut)} .addr p.big{color:var(--ink)}
+.acts{display:flex;flex-wrap:wrap;gap:10px;margin-top:1.2em}
+.act{display:inline-flex;justify-content:center;align-items:center;text-decoration:none;font:500 .8rem/1 var(--mono);letter-spacing:.08em;text-transform:uppercase;padding:1.15em 1.3em;border:1.5px solid var(--ink);color:var(--ink)}
+.act.go{background:var(--ink);color:#fff}
+.visit figure{margin:0} .visit figure img{width:100%;aspect-ratio:4/3;object-fit:cover} .visit figcaption{margin-top:8px}
+.next{margin:56px 0 0;padding:20px 24px;background:var(--paper);border-left:3px solid var(--gold)}
+.next p{margin:.4em 0 0;color:#33363b;font-size:.95rem}
+footer{padding:26px 0 44px;color:var(--mut);font:400 .8rem/1.7 var(--sans)} footer b{color:var(--ink)}
+.sticky{display:none}
+@media(max-width:860px){
+  .mast{flex-direction:column;gap:8px}
+  .hero .in{grid-template-columns:1fr;gap:26px;min-height:0;padding-top:28px;padding-bottom:40px}
+  .disc{order:-1;width:min(78vw,300px)} .disc:before,.disc:after{inset:-9px}
+  .hero h2{font-size:2.5rem} .fig{position:static;display:block;padding:0 28px 22px}
+  .row3,.ask .grid,.visit .cols,.voice .cols{grid-template-columns:1fr;gap:30px}
+  .tray{grid-template-columns:1fr 1fr} .cell{min-height:150px;padding:18px 14px 16px} .cell svg{width:38px;height:38px} .cell h3{font-size:1.05rem}
+  .brands{padding:16px 18px;gap:8px} .brands p{font-size:1rem}
+  .voice{padding:60px 0 64px} .papers{grid-template-columns:1fr;gap:18px;padding:0 14px} .paper{width:82%;transform:none!important} .paper:nth-child(2){justify-self:end} .paper:nth-child(3){grid-column:auto;width:82%}
+  .tags{grid-template-columns:1fr;gap:34px;margin-top:3em} .voice blockquote{padding-left:18px}
+  .dial{width:190px;margin:0 auto} .acts{display:grid;grid-template-columns:1fr 1fr} .act.go{grid-column:1/3} .act:nth-child(2):last-child{grid-column:1/3}
+  .plates,.work,.ask,.visit{padding-top:54px;padding-bottom:50px}
+  body{padding-bottom:62px}
+  .sticky{display:flex;position:fixed;inset:auto 0 0 0;z-index:9;justify-content:center;background:var(--ink);color:#fff;text-decoration:none;padding:16px;font:400 1.2rem/1 var(--serif)}
+}
+/* pass 2026-09-19: phone first screen — smaller disc, no repeated kicker, tighter sections */
+@media(max-width:860px){
+  .mast .mono{display:none} .mast{padding-top:16px;padding-bottom:12px}
+  .hero .in{gap:18px;padding-top:18px;padding-bottom:28px} .disc{width:min(56vw,220px)} .disc:before,.disc:after{inset:-7px}
+  .hero .mono{display:none} .hero h2{margin:.1em 0 .3em;font-size:2.2rem} .hero p{margin-bottom:0}
+  .hero .cta,.hero .btn,.hero .call{display:none}
+  .plates,.work,.ask,.visit{padding-top:40px;padding-bottom:40px} .voice{padding:40px 0 44px}
+}
+</style>
+</head>
+<body>
+<div class="notice"><b>Nikita</b> · Nesaistošs dizaina priekšlikums. Šī nav darbnīcas oficiālā mājaslapa.</div>
+
+<header class="wrap mast">
+  <h1>Brokāns un dēli</h1>
+  <p class="mono">Pulksteņu darbnīca · Aspazijas bulvāris 32, Rīga · vairāk nekā 35 gadus</p>
+</header>
+
+<div class="hero"><div class="wrap in">
+  <div class="txt">
+    <span class="mono">Pulksteņu remonts un restaurācija · Aspazijas bulvāris 32</span>
+    <h2>Izjaukts. Iztīrīts. <span>Salikts.</span></h2>
+    <p>Katram pulkstenim vajag savu meistaru. Rokas, kabatas, sienas un grīdas pulksteņus labojam un restaurējam pašā Rīgas centrā — jau vairāk nekā 35 gadus.</p>
+    <a class="call" href="tel:+37129400757"><small>Zvanīt darbnīcai</small><span>29 400 757</span></a>
+  </div>
+  <figure class="disc"><img src="img/movement.jpg" alt="Pulksteņa mehānisms ar datuma disku, tuvplānā" width="1400" height="1400" fetchpriority="high"></figure>
+</div><p class="fig mono">Att. 1 — mehānisms apkopē</p></div>
+
+<main>
+<section class="plates"><div class="wrap">
+  <h2>Kas notiek ar jūsu pulksteni</h2>
+  <p class="intro">Apkope nav baterijas maiņa. Mehānismu izjaucam līdz pēdējai skrūvei, katru detaļu iztīrām un saliekam atpakaļ — tā, lai tas ietu vēl gadiem.</p>
+  <div class="row3">
+    <figure class="plate"><img src="img/plate-1.jpg" alt="Izjaukts kabatas pulkstenis" loading="lazy" width="1200" height="1500"><span class="n">01</span><h3>Izjaucam</h3><p>Katra detaļa savā vietā uz galda: tilti, zobrati, atsperes, ciparnīca.</p></figure>
+    <figure class="plate"><img src="img/plate-2.jpg" alt="Pulksteņa detaļas tīrīšanas grozos" loading="lazy" width="1100" height="1375"><span class="n">02</span><h3>Iztīrām</h3><p>Detaļas iet tīrīšanas grozos — vecā eļļa un putekļi paliek tur.</p></figure>
+    <figure class="plate"><img src="img/plate-3.jpg" alt="Kvarca mehānisms ar spolēm, tuvplānā" loading="lazy" width="1200" height="1500"><span class="n">03</span><h3>Saliekam un noregulējam</h3><p>Eļļojam, saliekam, pārbaudām gaitu. Tikai tad pulkstenis atgriežas pie jums.</p></figure>
+  </div>
+</div></section>
+
+<section class="work"><div class="wrap">
+  <h2>Ko ņemam darbā</h2>
+  <p class="lead">Mehāniskos un kvarca pulksteņus — diagnostika, apkope, remonts. Un restaurāciju tiem, kuriem ir vēsture: kabatas, sienas un grīdas pulksteņiem atgriežam gaitu, nesabojājot raksturu.</p>
+  <div class="tray">
+    <div class="cell"><svg viewBox="0 0 48 48" aria-hidden="true"><circle cx="24" cy="24" r="11"/><path d="M18 13V6h12v7M18 35v7h12v-7M24 18v6l4 2"/></svg><h3>Rokas pulksteņi</h3><p>mehāniskie un kvarca</p></div>
+    <div class="cell"><svg viewBox="0 0 48 48" aria-hidden="true"><circle cx="24" cy="27" r="13"/><circle cx="24" cy="27" r="9"/><path d="M24 18v9l5 3M21 10h6M24 10V7M20 7h8"/></svg><h3>Kabatas pulksteņi</h3><p>arī ar vēsturi</p></div>
+    <div class="cell"><svg viewBox="0 0 48 48" aria-hidden="true"><circle cx="24" cy="20" r="14"/><path d="M24 11v9l6 4M24 34v8M20 42h8"/><circle cx="24" cy="20" r="1.5"/></svg><h3>Sienas pulksteņi</h3><p>ar svārstu un bez</p></div>
+    <div class="cell"><svg viewBox="0 0 48 48" aria-hidden="true"><rect x="14" y="4" width="20" height="40" rx="2"/><circle cx="24" cy="14" r="6"/><path d="M24 11v3l2 1M24 24v10"/><circle cx="24" cy="36" r="3"/></svg><h3>Grīdas pulksteņi</h3><p>restaurācija</p></div>
+    <div class="cell now"><svg viewBox="0 0 48 48" aria-hidden="true"><rect x="8" y="16" width="28" height="16" rx="3"/><path d="M36 21h4v6h-4M15 24h8M19 20v8"/></svg><h3>Baterijas maiņa</h3><p>uz vietas</p></div>
+    <div class="cell now"><svg viewBox="0 0 48 48" aria-hidden="true"><path d="M20 4h8l2 14H18zM18 30h12l-2 14h-8z"/><rect x="16" y="18" width="16" height="12" rx="2"/><path d="M24 18v12"/></svg><h3>Siksniņas un rokassprādzes</h3><p>uz vietas</p></div>
+    <div class="cell now"><svg viewBox="0 0 48 48" aria-hidden="true"><rect x="6" y="18" width="10" height="12" rx="2"/><rect x="19" y="18" width="10" height="12" rx="2"/><rect x="32" y="18" width="10" height="12" rx="2"/><path d="M16 24h3M29 24h3"/></svg><h3>Rokassprādzes saīsināšana</h3><p>uz vietas</p></div>
+    <div class="cell now"><svg viewBox="0 0 48 48" aria-hidden="true"><circle cx="20" cy="20" r="12"/><path d="M29 29l13 13M15 20a5 5 0 0 1 5-5"/></svg><h3>Diagnostika</h3><p>bieži — tajā pašā dienā</p></div>
+  </div>
+  <div class="brands"><span class="mono">Strādājam ar</span><p>Omega · Longines · Tissot · Frederique Constant · Orient · Citizen · Casio · Candino</p></div>
+</div></section>
+
+<section class="voice"><div class="wrap cols">
+  <div>
+    <p class="score mono"><b>5,0</b><i>★★★★★</i><span>147 atsauksmes · Google</span></p>
+    <blockquote>„Katram pulksteņu īpašniekam ir vajadzīgs savs pulksteņu meistars tieši tāpat, kā zobārsts vai cits speciālists…”<cite class="mono">Klienta atsauksme · Google</cite></blockquote>
+  </div>
+  <div class="papers">
+    <figure class="paper"><p>„…pēc 30 min. darba, saņēmām savus 4 pulksteņus ideālā kārtībā.”</p><span class="mono">Google · ★★★★★</span></figure>
+    <figure class="paper"><p>„…iedeva atlaidi un garantiju uz gadu. Ļoti iesaku!”</p><span class="mono">Google · ★★★★★</span></figure>
+    <figure class="paper"><p>„Ātri, kvalitatīvi un par saprātīgām cenām.”</p><span class="mono">Google · ★★★★★</span></figure>
+  </div>
+</div></section>
+
+<section class="ask"><div class="wrap">
+  <h2>Pastāstiet par savu pulksteni</h2>
+  <p class="intro">Divas minūtes — un meistars jau zina, ko jūs nesīsiet. Atbildi ar aptuvenu cenu un termiņu saņemsiet tajā pašā sarakstē.</p>
+  <div class="grid">
+    <div>
+      <label class="mono">Kāds pulkstenis</label>
+      <div class="chips" data-k="type"><button>Rokas</button><button>Kabatas</button><button>Sienas</button><button>Grīdas</button></div>
+      <label class="mono">Kas noticis</label>
+      <div class="chips" data-k="issue" data-multi><button>Neiet</button><button>Atpaliek vai steidzas</button><button>Jāmaina baterija</button><button>Siksniņa / rokassprādze</button><button>Stikls</button><button>Sen nav bijusi apkope</button></div>
+      <label class="mono" for="brand">Zīmols un modelis, ja zināt</label>
+      <input id="brand" placeholder="piem., Omega Seamaster, vectēva kabatas pulkstenis">
+      <label class="mono" for="note">Vēl kas svarīgs</label>
+      <textarea id="note" placeholder="piem., apstājās pēc kritiena; mantots; vajag līdz mēneša beigām"></textarea>
+    </div>
+    <div class="preview">
+      <span class="mono">Ziņa, ko saņems darbnīca</span>
+      <pre id="msg"></pre>
+      <div class="send"><a class="wa" id="wa" href="#" rel="noopener">Sūtīt WhatsApp</a><a id="mail" href="#">Sūtīt e-pastā</a></div>
+      <p class="tiny">Ziņa top jūsu ierīcē — šī lapa neko neglabā un nevienam nesūta jūsu vietā.</p>
+    </div>
+  </div>
+</div></section>
+
+<section class="visit"><div class="wrap">
+  <h2>Darbnīca</h2>
+  <div class="cols">
+    <div class="dial">
+      <svg viewBox="0 0 200 200" role="img" aria-label="Pulkstenis: zelta loks rāda šodienas darba laiku"><circle cx="100" cy="100" r="96" fill="#fff" stroke="#16181b" stroke-width="2"/><g id="ticks" stroke="#16181b"></g><path id="arc" fill="none" stroke="#a8843f" stroke-width="7" stroke-linecap="round"/><line id="hh" x1="100" y1="100" x2="100" y2="52" stroke="#16181b" stroke-width="4.5" stroke-linecap="round"/><line id="mh" x1="100" y1="100" x2="100" y2="30" stroke="#16181b" stroke-width="2.5" stroke-linecap="round"/><circle cx="100" cy="100" r="5" fill="#a8843f"/></svg>
+      <p class="now" id="now"></p>
+    </div>
+    <div>
+      <span class="mono">Darba laiks</span>
+      <ul class="hours" id="hours"><li data-d="1 2 3 4 5"><span>Pirmdiena – piektdiena</span><span>10:00 – 19:00</span></li><li data-d="6"><span>Sestdiena</span><span>10:00 – 16:00</span></li><li data-d="0"><span>Svētdiena</span><span>slēgts</span></li></ul>
+      <div class="addr"><span class="mono">Adrese</span><p class="big">Aspazijas bulvāris 32</p><p>Rīga, LV-1050 · otrs tālrunis <a href="tel:+37129132993">29 132 993</a></p></div>
+      <div class="acts"><a class="act go" href="tel:+37129400757">Zvanīt · 29 400 757</a><a class="act" href="https://www.google.com/maps/search/?api=1&query=Brok%C4%81ns+un+d%C4%93li+Aspazijas+bulv%C4%81ris+32+R%C4%ABga" rel="noopener">Karte ↗</a></div>
+    </div>
+    <figure><img src="img/bench.jpg" alt="Darbnīcas galds" loading="lazy" width="1400" height="1050"><figcaption class="mono">Att. 5 — darba galds</figcaption></figure>
+  </div>
+  <div class="next"><span class="mono">Ja šis priekšlikums interesē — nākamie soļi</span><p>Cenrādis biežākajiem darbiem, precizēts ar jums · lapa krievu un angļu valodā · pieslēgšana jūsu Google kartes ierakstam, kur šobrīd vietnes nav vispār.</p></div>
+</div></section>
+</main>
+
+<footer><div class="wrap"><b>Brokāns un dēli, pulksteņu darbnīca</b> · Aspazijas bulvāris 32, Rīga, LV-1050 · 29 400 757<br>Fotogrāfijas: Brokāns un dēli (Google Maps) · Dizaina priekšlikums: Nikita · ngoloveckis@gmail.com</div></footer>
+<a class="sticky" href="tel:+37129400757">Zvanīt · 29 400 757</a>
+
+<script>
+const S={type:'',issue:[]};
+document.querySelectorAll('.chips').forEach(g=>g.querySelectorAll('button').forEach(b=>{b.type='button';b.setAttribute('aria-pressed','false');b.onclick=()=>{
+  const k=g.dataset.k,v=b.textContent;
+  if(g.hasAttribute('data-multi')){const on=b.getAttribute('aria-pressed')==='true';b.setAttribute('aria-pressed',String(!on));S[k]=on?S[k].filter(x=>x!==v):[...S[k],v];}
+  else{g.querySelectorAll('button').forEach(x=>x.setAttribute('aria-pressed','false'));b.setAttribute('aria-pressed','true');S[k]=v;}
+  draw();}}));
+['brand','note'].forEach(id=>document.getElementById(id).addEventListener('input',draw));
+function draw(){
+  const brand=document.getElementById('brand').value.trim(),note=document.getElementById('note').value.trim();
+  const L=['Labdien! Vēlos nodot pulksteni remontam.'];
+  L.push('Pulkstenis: '+(S.type?S.type.toLowerCase()+' pulkstenis':'—')+(brand?' · '+brand:''));
+  L.push('Problēma: '+(S.issue.length?S.issue.join(', ').toLowerCase():'—'));
+  if(note)L.push('Piezīmes: '+note);
+  L.push('Kad varu atnest, un cik aptuveni tas maksātu?');
+  const t=L.join('\n');document.getElementById('msg').textContent=t;
+  document.getElementById('wa').href='https://wa.me/37129400757?text='+encodeURIComponent(t);
+  document.getElementById('mail').href='mailto:kaspars.brokans@gmail.com?subject='+encodeURIComponent('Pulksteņa remonts')+'&body='+encodeURIComponent(t);
+}
+draw();
+// live dial: gold arc = today's opening hours (as listed on Google Maps), hands = Rīga time
+(function(){const H={1:[10,19],2:[10,19],3:[10,19],4:[10,19],5:[10,19],6:[10,16]},NS='http://www.w3.org/2000/svg';
+  const tk=document.getElementById('ticks');for(let i=0;i<60;i++){const l=document.createElementNS(NS,'line'),big=i%5===0,a=i*6*Math.PI/180,r1=big?80:86,r2=91;
+    l.setAttribute('x1',100+r1*Math.sin(a));l.setAttribute('y1',100-r1*Math.cos(a));l.setAttribute('x2',100+r2*Math.sin(a));l.setAttribute('y2',100-r2*Math.cos(a));l.setAttribute('stroke-width',big?2.2:1);tk.appendChild(l);}
+  const pt=(h,r)=>{const a=(h%12)*30*Math.PI/180;return [100+r*Math.sin(a),100-r*Math.cos(a)]};
+  function tick(){try{const parts=new Intl.DateTimeFormat('en-GB',{timeZone:'Europe/Riga',weekday:'short',hour:'2-digit',minute:'2-digit',hour12:false}).formatToParts(new Date());
+    const g=k=>parts.find(x=>x.type===k).value,d=['Sun','Mon','Tue','Wed','Thu','Fri','Sat'].indexOf(g('weekday')),hr=+g('hour'),mi=+g('minute'),m=hr*60+mi,h=H[d];
+    document.getElementById('hh').setAttribute('transform','rotate('+((hr%12)*30+mi*.5)+' 100 100)');document.getElementById('mh').setAttribute('transform','rotate('+(mi*6)+' 100 100)');
+    const arc=document.getElementById('arc');if(h){const [x1,y1]=pt(h[0],70),[x2,y2]=pt(h[1],70);arc.setAttribute('d','M'+x1+' '+y1+' A70 70 0 '+((h[1]-h[0])>6?1:0)+' 1 '+x2+' '+y2);}else arc.removeAttribute('d');
+    document.querySelectorAll('#hours li').forEach(li=>li.classList.toggle('today',li.dataset.d.split(' ').includes(String(d))));
+    let nd=d,n=0;do{nd=(nd+1)%7;n++}while(!H[nd]);const names=['svētdien','pirmdien','otrdien','trešdien','ceturtdien','piektdien','sestdien'];
+    const open=h&&m>=h[0]*60&&m<h[1]*60,el=document.getElementById('now');
+    el.textContent=open?'Šobrīd atvērts · līdz '+h[1]+':00':(h&&m<h[0]*60?'Slēgts · atveram šodien '+h[0]+':00':'Slēgts · atveram '+(n===1?'rīt':names[nd])+' '+H[nd][0]+':00');el.classList.toggle('shut',!open);}catch(e){}}
+  tick();setInterval(tick,20000);})();
+</script>
+</body>
+</html>
